@@ -4,6 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+/*My Styling */
+#h3{
+    font-weight:600;
+}
+#findOut{
+    color: white;
+    font-weight: 600;
+}
+
 /* Global Styles */
 
 html,
@@ -155,7 +164,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/scott-webb-12981.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -173,7 +182,9 @@ hr.small {
 .services {
     padding: 50px 0;
 }
-
+.skillsList{
+    font-size: 1.2em;
+}
 .service-item {
     margin-bottom: 30px;
 }
