@@ -5,13 +5,91 @@
  */
 
 /*My Styling */
+#sidebar-wrapper{
+    
+}
 #h3{
     font-weight:600;
+    color: #ff4907;
 }
 #findOut{
     color: white;
     font-weight: 600;
 }
+
+
+#contact-Form{
+    display:inline-block;
+
+    margin:0-auto;
+}
+.emailContainer{
+    /*display:inline-block;
+    margin: 0-auto;*/
+    margin-left: 5%;
+}
+
+/* portfolio images hover animation */
+
+/*.img-portfolio:hover {
+    opacity: 0.1;
+}*/
+
+.fadeIn{
+    opacity:0.1;
+    animation-name: fadePortfolioItem;
+    animation-duration: 1s;
+    /*animation-iteration-count: 1;*/
+}
+/*
+@keyframes fadePortfolioItem{
+    0%{opacity:1}
+    10%{opacity:0.9}
+    20%{opacity:0.8}
+    30%{opacity:0.7}
+    40%{opacity:0.6}
+    50%{opacity:0.5}
+    60%{opacity:0.4}
+    70%{opacity:0.3}
+    80%{opacity:0.2}
+    90%{opacity:0.2}
+    100%{opacity:0.2}
+}
+*/
+
+
+.textChange{
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Permanent Marker', Cursive;
+    color: red;
+}
+
+.overlay{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height:100%;
+    width:100%;
+    text-align:center;*/
+    position:absolute;
+    z-index:100;
+    padding: 15% 15% 15% 15%;
+}
+/*.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn{
+    0%{}
+    0%{}
+    0%{}
+    0%{}
+    0%{}
+
+}*/
 
 /* Global Styles */
 
@@ -230,10 +308,37 @@ hr.small {
     margin: 0 auto;
 }
 
-.img-portfolio:hover {
-    opacity: 0.8;
+/* portfolio images hover animation */
+
+./*img-portfolio:hover {
+    opacity: 0.1;
+}*/
+
+.fadeIn{
+    opacity:0.3;
+}
+.overlay{
+    height:100%;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    z-index:100;
+    padding: 15% 15% 15% 15%;
+}
+/*.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
+@keyframes fadeIn{
+    0%{}
+    0%{}
+    0%{}
+    0%{}
+    0%{}
+
+}*/
 /* Call to Action */
 
 .call-to-action {
