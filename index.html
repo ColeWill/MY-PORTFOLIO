@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ColeWill.tech</title>
+    <title>ColeWill.com</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,12 +38,12 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <!-- <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a> -->
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>coleWill.tech</a>
+                <a href="#top" onclick=$("#menu-close").click();>coleWill.com</a>
             </li>
             <li>
                 <a href="#top" onclick=$("#menu-close").click();><span class="glyphicon glyphicon-home"> Home</a>
@@ -63,13 +63,15 @@
         </ul>
     </nav>
 
+<!-- <div class="container-fluid"> -->
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>Cole Williams</h1>
-            <h3 id="h3">Full Stack Web Developer</h3>
             <br>
-            <a href="#about" class="btn btn-primary btn-lg"><span id="findOut">Find Out More</span></a>
+            <!-- <h3 id="h3">Full Stack Web Developer</h3> -->
+            <br>
+            <a style="padding:10px 10px 10px 10px; border-radius:8px;opacity:0.9;" href="#about" class="skillsFade textChange"><span id="findOut">Full Stack Web Developer</span></a>
         </div>
     </header>
 
@@ -91,11 +93,11 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="services" class="services skillsFade">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>My Services </h2>
+                    <h2>My Skills </h2>
                     <hr class="small">
                     <div class="row">
                         
@@ -181,7 +183,7 @@
                                 <i class="devicon-angularjs-plain"></i>
                             </span>
                                 <h4>
-                                    <strong>Angular</strong>
+                                    <strong>AngularJS</strong>
                                 </h4>
                                 <!-- <p>Front End Framework</p> -->
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
@@ -206,10 +208,10 @@
                                 <span class="fa-stack fa-4x">
                                 <!-- <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-flask fa-stack-1x text-primary"></i> -->
-                                <i class="devicon-jquery-plain"></i>
+                                <i class="devicon-mongodb-plain"></i>
                             </span>
                                 <h4>
-                                    <strong>jQuery</strong>
+                                    <strong>mongoDB</strong>
                                 </h4>
                                <!--  <p>Java Script Framework</p> -->
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
@@ -229,9 +231,9 @@
 
     <!-- Callout -->
     <aside class="callout">
-        <div class="text-vertical-center">
+        <!-- <div class="pull-left">
             
-            <ul class="skillsList" style="list-style-type: none;">
+            <ul class="skillsList ulSkills" style="list-style-type: none;">
                 <li class="skillSet"><strong style="font-size:1.5em;">Skillset</strong></li>
                 <li><br></li>
                 <li>HTML/CSS</li>
@@ -240,18 +242,28 @@
                 <li>Bootstrap</li>
                 <li>JavaScript</li>
                 <li>jQuery</li>
+               
+                
+                
+            </ul>
+        </div> -->
+        <!-- <div class="pull-right">
+            
+            <ul class="skillsList ulSkills" style="list-style-type: none;">
+                <li class="skillSet"><strong style="font-size:1.5em;">Skillset</strong></li>
+                <li><br></li>
+                
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>Mongo DB + Mongoose</li>
                 <li>SQL DB + PostgreSQL</li>
                 <li>Angular I + II</li>
                 <li>React</li>
-                <li>MEAN - stack </li>
-                <li>SEAN - stack</li>
+                
                 
                 
             </ul>
-        </div>
+        </div> -->
     </aside>
 
     <!-- Portfolio -->
@@ -263,40 +275,36 @@
                     <hr class="small">
                     <div class="row">
                     <!-- portfolio-img 1 -->
-                        <div class="col-sm-3 col-md-6 ">
+                        <div class="col-sm-6 col-md-6 ">
                         
                             <div class="portfolio-item">
                                 <a  href="https://coolcode2.github.io/war/">
-                                    <div class="overlay hideMe" style="visibility: hidden;">Here I used Html + Css + jQuery to remake the 2-player card game war.</div>
+                                    <div class="overlay hideMe" style="visibility:hidden;padding:0 8% 15% 0;">Here I used Html + Css + jQuery to remake<br> the 2-player card game war.</div>
                                     <img class ="img-portfolio img-responsive" src="img/WarPortImg.png">
                             </a>
-                            </div>
-                           
-
-                            
+                            </div>   
                         </div>
                         <!-- portfolio-img 2 -->
-                        <div class="col-sm-3 col-md-6">
+                        <div class="col-sm-6 col-md-6">
                             <div class="portfolio-item proj2">
                                 <a href="https://protected-springs-84894.herokuapp.com/secret">
-                                    <div class="overlay hideMe" style="visibility: hidden;">This is a random inspirational quote finder. I used Bootstrap, Node.js, MongoDB, express, and a 3rd-party API.</div>
+                                    <div class="overlay hideMe" style="visibility: hidden;padding:0 8% 15% 0;">This is a random inspirational quote finder.<br> I used Bootstrap, Node.js, MongoDB, express, and a 3rd-party API.</div>
                                     <img class="img-portfolio img-responsive" src="img/QuotePort.png">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-6">
-                            <div class="portfolio-item proj3">
-                                <a href="https:fftt.herokuapp.com">
-                                    <div class="overlay hideMe" style="visibility: hidden;">Food Truck Finder App <br>As a part of a group project I built the Server, Backend Routes and Database with Node.js, PostgreSQl, and Express.</div>
-                                
-                                    <img class="img-portfolio img-responsive" src="img/FFTTport.png">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="portfolio-item proj2">
+                                <a href="#">
+                                    <div class="overlay hideMe" style="visibility: hidden;padding:0 8% 15% 0;">A Website for A Local Colorado Business.  I spent alot of time styling this one!</div>
+                                    <img class="img-portfolio img-responsive" src="img/skinnyDesk1.png">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-md-6">
+                        <div class="col-sm-6 col-md-6">
                             <div class="portfolio-item proj4">
                                 <a href="https://cryptic-journey-74629.herokuapp.com/">
-                                    <div class="overlay hideMe" style="visibility: hidden;">Similar to my quotes App this is also a MEAN stack... But I built in only 24hrs </div>
+                                    <div class="overlay hideMe" style="visibility: hidden;padding:0 8% 15% 0;"> This is a Flashcard saver APP, very helpful when studying!  Made with AngularJS, Node, Monogo, and Express.</div>
                                     <img class="img-portfolio img-responsive" src="img/FlashApp.png">
                                 </a>
                             </div>
@@ -304,17 +312,68 @@
                     </div>
                     <!-- /.row (nested) -->
 
-                    <a href="#" class="btn btn-dark">Visit My Github <i class="devicon-github-plain"></i></a>
+                    
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
+            <!-- 2nd row -->
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    
+                    <hr class="small">
+                    <div class="row">
+                    <!-- portfolio-img 1 -->
+                        <div class="col-sm-6 col-md-6 ">
+                        
+                            <div class="portfolio-item">
+                                <a  href="https://coolcode2.github.io/war/">
+                                    <div class="overlay hideMe" style="visibility: hidden;padding:0 8% 15% 0;">Prototype of a Racing App that's in the works,<br> It's built with JavaScript!</div>
+                                    <img class ="img-portfolio img-responsive" src="img/rcrShot.png">
+                            </a>
+                            </div>
+                        </div>
+                        <!-- portfolio-img 2 -->
+                        <div class="col-sm-6 col-md-6">
+                            <div class="portfolio-item proj2">
+                                <a href="#">
+                                    <div class="overlay hideMe" style="visibility: hidden;">Food Truck Finder App. I built the Server, API, and Database with Nodejs, Express, and mongoDB.  User authentication is with passport.</div>
+                                    <img class="img-portfolio img-responsive" src="img/ffttShot.png">
+                                </a>
+                            </div>
+                        </div>
+                       <!--  <div class="col-sm-3 col-md-6">
+                            <div class="portfolio-item proj3">
+                                <a href="https:fftt.herokuapp.com">
+                                    <div class="overlay hideMe" style="visibility: hidden;">Food Truck Finder App <br>As a part of a group project I built the Server, Backend Routes and Database with Node.js, PostgreSQl, and Express.</div>
+                                
+                                    <img class="img-portfolio img-responsive" src="img/FFTTport.png">
+                                </a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-sm-3 col-md-6">
+                            <div class="portfolio-item proj4">
+                                <a href="https://cryptic-journey-74629.herokuapp.com/">
+                                    <div class="overlay hideMe" style="visibility: hidden;"> This MEAN stack is a cloud based Flashcard saver, very helpful when studying!</div>
+                                    <img class="img-portfolio img-responsive" src="img/FlashApp.png">
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- /.row (nested) -->
+
+                   
+
+                    <a style="font-size:1.2em;padding:10px 10px 10px 10px; border-radius:8px;opacity:0.9;" href="https://github.com/CoolCode2" class="skillsFade "><i class="devicon-github-plain"></i><span> Visit My Github</span></a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
         </div>
         <!-- /.container -->
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+    <aside class="call-to-action skillsFade">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -331,55 +390,152 @@
     </aside>
 
 
-<div class="emailContainer">
-<h3 class="grafitti">Drop Me A Line!</h3>
-  <form id="contact-form" method="POST" action="http://formspree.io/Wcole2222@gmail.com">
+<!-- EMAILEMAILEMAILEMAIL -->
+<div class="container-fluid" id="emailBack">
+        <div class="col-lg-10" id="emailLens">
 
-    <div class="messages"></div>
-    <div class="controls">
-        <div class="row">
-            <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6">
-                <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="your email" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
+        
+            <!-- ROW -->
+            <!-- wraps both halves -->
+            <section class="row">
+
+            <!-- left half -->
+                <div class="leftHalf row col-sm-6 col-md-6 col-lg-6">
+                    <p class="textChange" style="font-size:2em;">Drop Me A Line!</p>
+                    <form action="http://formspree.io/Wcole2222@gmail.com" id="contact-form" method="post" name="contact-form">
+                       <!--  <div class="row"> -->
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+                                <div class="form-group">
+                                    <label for="form_email" style="font-size:2em;">Email *</label> <input class="form-control" data-error="Valid email is required." id="form_email" name="email" placeholder="your email" required="required" type="email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="row"> -->
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+                                <div class="form-group">
+                                    <label for="form_message" style="font-size:2em;">Message</label> 
+                                    <textarea class="form-control" data-error="Please,leave us a message." id="form_message" name="message" placeholder="Heartfelt message..." required="required" rows="4"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="row"> -->
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input class="btn btn-success btn-send" type="submit" value="Send message">
+                            </div>
+                        <!-- </div> -->
+                        <div class="col-md-12"></div>
+                    </form>
                 </div>
-            </div>
+                <!-- left half -->
+                <div class="rightHalf pull-right col-sm-6 col-lg-6">
+                 <img style="margin:5% 0  0 20%;padding:10px 10px 0 0;" height="75%" width="75%" src="img/headShot.jpg">
+
+
+
+                </div>
+            </section>
             
+            
+           
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6">
-                <div class="form-group">
-                    <label for="form_message">Message</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Heartfelt message..." rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
-
-            </div>
-        </div>
-        <!-- <div class="row">
-            <div class="col-md-12">
-                
-            </div>
-        </div> -->
     </div>
+    <!-- EMAILEMAILEMAILEMAIL -->
 
+    
 
-</form>
-</div>
+    <section id="services" class="services skillsFade">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Cole Williams </h2>
+                    <hr class="small">
+                    <div class="row">
+                        
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span  class="fa-stack fa-4x">
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i> -->
+                                <img style="margin:0 15px 20px 0;" src="img/range.png">
+                            </span>
+                                <h4>
+                                    <strong>Denver CO</strong>
+                                </h4>
+                                <!-- <p>Front-End Styling Framework</p> -->
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+
+                        </div>
+                         <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i> -->
+                                <i class="fa fa-envelope-o fa-fw"></i>
+                            </span>
+                                <h4>
+                                    <strong>Wcole2222@Gmail.com</strong>
+                                </h4>
+                                <!-- <p>Front-End Styling Framework</p> -->
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i> -->
+                                <i class="fa fa-phone fa-fw"></i>
+                            </span>
+                                <h4>
+
+                                    <strong>(720) 883-6040</strong>
+                                </h4>
+                                <!-- <p>Front-End Styling Framework</p> -->
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i> -->
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </span>
+                                <h4>
+                                    <strong>LinkedIN</strong>
+                                </h4>
+                                <!-- <p>Server Side JavaScript</p> -->
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+                            </div>
+                        </div>
+                        </div>
+                      
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
+    <!-- timeline for dev jobs can go here -->
+    <!-- <footer>
+        
+            
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <img src="img/profile.jpg">
+                    
                     <h4><strong>Cole Williams</strong>
                     </h4>
-                    <p>Seeking Employment in
+                    <p>Currently Working in
                         <br>Denver Colorado</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (720) 883-6040</li>
@@ -390,7 +546,7 @@
                     <ul class="list-inline">
                         <li>
                             <a href="https://www.linkedin.com/in/wcole2222"><img src="./img/linklogo.png"></img></a>
-                        </li>
+                        </li> -->
                          <!-- can add social media links here... -->
                        <!--  <li>
                             <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
@@ -398,14 +554,14 @@
                         <li>
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li> -->
-                    </ul>
+                    <!-- </ul>
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; coleWill.tech 2017</p>
                 </div>
             </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
+        
+        
+    </footer> -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -490,7 +646,7 @@
     <!-- img hover info div WORKING -->
 <script src="js/hover.js"></script>
 
-
+<!-- </div>  -->
 </body>
 
 </html>
