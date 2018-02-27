@@ -4,6 +4,29 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+/*Loader*/
+.opacity{
+    opacity: .5;
+}
+.loader {
+    border: 16px solid #e6e9ef;
+    border-radius: 50%;
+    border-top: 16px solid #f44259;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+
+
+
 /*My Styling */
 .ulSkills{
     font-size: 3em;
@@ -11,7 +34,7 @@
 h1{
     font-weight:400;
     /*font-size: em;*/
-    color: rgba(230,60,60,1);
+    color: rgba(35,35,35,1);
    /* background-color: rgba(1,53,74,.3);*/
     display: inline-block;
     padding: 0% 1% 0 1%;
@@ -68,27 +91,20 @@ h3{
     opacity: 0.1;
 }*/
 
-.fadeIn{
-    opacity:0.1;
-    animation-name: fadePortfolioItem;
-    animation-duration: 1s;
-    /*animation-iteration-count: 1;*/
+.slightHoverFade {
+    -webkit-animation: slightFade 1s;
+    animation: slightFade 1s;
 }
-/*
-@keyframes fadePortfolioItem{
-    0%{opacity:1}
-    10%{opacity:0.9}
-    20%{opacity:0.8}
-    30%{opacity:0.7}
-    40%{opacity:0.6}
-    50%{opacity:0.5}
-    60%{opacity:0.4}
-    70%{opacity:0.3}
-    80%{opacity:0.2}
-    90%{opacity:0.2}
-    100%{opacity:0.2}
+
+
+@keyframes slightFade {
+    0%   {opacity: 1;} 
+    25%  {opacity: .75;}
+    75%  {opacity: .5;}
+    100% {opacity: .25;} 
 }
-*/
+
+
 
 
 .textChange{
@@ -395,6 +411,14 @@ var green2 = 'rgba(130,200,160,1)';*/
   background: -o-linear-gradient(bottom right, rgba(115,230,203,1), rgba(253,144,115,1)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(bottom right, rgba(115,230,203,1), rgba(253,144,115,1)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, rgba(115,230,203,1), rgba(253,144,115,1)); /* Standard syntax */
+}
+
+.skillsFade2{ 
+  border-radius: 15px;
+  background: -webkit-linear-gradient(left top, rgba(115,230,203,0.5), rgba(253,144,115,0.5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(115,230,203,0.5), rgba(253,144,115,0.5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(115,230,203,0.5), rgba(253,144,115,0.5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(115,230,203,0.5), rgba(253,144,115,0.5)); /* Standard syntax */
 }
 
 .call-to-action {

@@ -1,46 +1,53 @@
-   $(document).ready(function(){
+$(document).ready(function(){
 
-   
-// var pink = 'rgba(250,177,211,1)';
-// var yellow = 'rgba(255,255,82,1)';
-// var blue = 'rgba(200,230,250,1)';
-// var green = 'rgba(80,190,171,1)';
-// var sand = 'rgba(210,180,145,1)';
-// var green2 = 'rgba(130,200,160,1)';
-
-var colorArray = ['green2','yellow','blue','green','pink','sand'];
-var rando = colorArray[(Math.floor(Math.random()* colorArray.length))];
-var colorDiv = '<div class="fadeIn'+rando+'";></div>';
 
         $('.portfolio-item').on('mouseenter', function(event){
-            
-                            
 
-            var eventObject = event.currentTarget;
-            var hiddenDiv = eventObject.getElementsByTagName('div');
+            console.log('mouse just entered');
+
+            var eventObject = event.currentTarget; 
+            //this is the object that the mouse enter is on
+            var hiddenDiv = eventObject.getElementsByTagName('div'); 
+            //gets the div
             var aTag = $(event.currentTarget).find('a');
+            // var aTag1 = eventObject.getElementsByTagName('a');
             var imgTag = $(aTag).find('img');
+            // gets the image
             
-                
-            // console.log(colorDiv);
+           
+            $(hiddenDiv).fadeIn(1200);
+            $(imgTag).fadeTo(1000, .38);
+            // $(aTag1).addClass('slightHoverFade');
+            console.log('slightHoverFade added!');
+           
+            // changes opacity of the div  
+        }) // -->--> callback for mouse leave
 
-            // console.log(event.currentTarget);
-            $(hiddenDiv).append(colorDiv);
-            $(hiddenDiv).css('visibility','visible');
-            $(hiddenDiv).addClass('textChange');
-            $(imgTag).addClass('fadeIn');
-            // $(hiddenDiv).append(colorDiv);
-        })
+            $('.portfolio-item').on('click', function(event){
+                var eventObject = event.currentTarget;
+                var hiddenDiv = eventObject.getElementsByTagName('div');
+
+                console.log('you cliked a portio Item');
+                $(hiddenDiv).html("<div class='loader'></div>");
+
+                $(hiddenDiv).css('visibility', 'visible');
+                $(hiddenDiv).fadeIn(200);
+                // set timeout to remove loader class after 10sec
+            })
             .on('mouseleave', function(event){
                 console.log('mouse left');
                 var eventObject = event.currentTarget;
                 var hiddenDiv = eventObject.getElementsByTagName('div');
+                var aTag1 = eventObject.getElementsByTagName('a');
+                // var imgTag = $(aTag).find('img');
+
+                $(hiddenDiv).fadeOut(1200);
+                // $(aTag1).removeClass('slightHoverFade');
                 var aTag = $(event.currentTarget).find('a');
                 var imgTag = $(aTag).find('img');
-
-                $(hiddenDiv).css('visibility','hidden');
-                $(imgTag).removeClass('fadeIn');
-
+                $(imgTag).fadeTo(1200, 1);
+                console.log('slightHoverFade Removed');
+               
             });
     });
         
