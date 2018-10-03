@@ -31,10 +31,10 @@
 .ulSkills{
     font-size: 3em;
 }
-h1{
+#top h1{
     font-weight:400;
     /*font-size: em;*/
-    color: rgba(35,35,35,1);
+    color: white;
    /* background-color: rgba(1,53,74,.3);*/
     display: inline-block;
     padding: 0% 1% 0 1%;
@@ -63,8 +63,7 @@ h3{
     display: table;
     width: 100%;
     height: 500px;
-    color: #fff;
-    background: url(../img/beachCity.jpg) no-repeat center center scroll;
+    background-image: url(../img/Low-High-Res/almost.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -307,7 +306,8 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/scott-webb-12981.jpg) no-repeat center center scroll;
+    background: url(../img/Low-High-Res/Wall-In-London-LOW.jpg);
+    background-image: no-repeat center center scroll cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -334,12 +334,12 @@ hr.small {
 
 /* Callout */
 
-.callout {
+#callout {
     display: table;
     width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/beachOver.jpg) no-repeat center center scroll;
+    height:100%;
+    
+    background-image: url(../img/Low-High-Res/Invader.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -404,21 +404,14 @@ var green2 = 'rgba(130,200,160,1)';*/
     z-index:100;
     padding: 15% 15% 15% 15%;
 }
-
+/* 118 173 184 */
+/* 222 194 73 */
 .skillsFade{ 
   background: ; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, rgba(115,230,203,1), rgba(253,144,115,1)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, rgba(115,230,203,1), rgba(253,144,115,1)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, rgba(115,230,203,1), rgba(253,144,115,1)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, rgba(115,230,203,1), rgba(253,144,115,1)); /* Standard syntax */
-}
-
-.skillsFade2{ 
-  border-radius: 15px;
-  background: -webkit-linear-gradient(left top, rgba(115,230,203,0.5), rgba(253,144,115,0.5)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, rgba(115,230,203,0.5), rgba(253,144,115,0.5)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, rgba(115,230,203,0.5), rgba(253,144,115,0.5)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, rgba(115,230,203,0.5), rgba(253,144,115,0.5)); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, rgba(199,87,83,1), rgba(222,194,73,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(199,87,83,1), rgba(222,194,73,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(199,87,83,1), rgba(222,194,73,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right,rgba(199,87,83,1), rgba(222,194,73,1)); /* Standard syntax */
 }
 
 .call-to-action {
