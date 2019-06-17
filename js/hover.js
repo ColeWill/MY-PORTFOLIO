@@ -14,7 +14,6 @@ $(document).ready(function(){
             var imgTag = $(aTag).find('img');
             // gets the image
             
-           
             $(hiddenDiv).fadeIn(1200);
             $(imgTag).fadeTo(1000, .38);
             // $(aTag1).addClass('slightHoverFade');
@@ -28,14 +27,18 @@ $(document).ready(function(){
                 var hiddenDiv = eventObject.getElementsByTagName('div');
 
                 console.log('you cliked a portio Item');
+                console.log('hidden div', hiddenDiv);
                 $(hiddenDiv).html("<div class='loader'></div>");
 
                 $(hiddenDiv).css('visibility', 'visible');
+                console.log(hiddenDiv);
                 $(hiddenDiv).fadeIn(200);
-                // set timeout to remove loader class after 10sec
+                setTimeout(function () {
+                    
+                }, 3000);
             })
             .on('mouseleave', function(event){
-                console.log('mouse left');
+                // console.log('mouse left');
                 var eventObject = event.currentTarget;
                 var hiddenDiv = eventObject.getElementsByTagName('div');
                 var aTag1 = eventObject.getElementsByTagName('a');
@@ -46,7 +49,7 @@ $(document).ready(function(){
                 var aTag = $(event.currentTarget).find('a');
                 var imgTag = $(aTag).find('img');
                 $(imgTag).fadeTo(1200, 1);
-                console.log('slightHoverFade Removed');
+                // console.log('slightHoverFade Removed');
                
             });
     });
